@@ -1,12 +1,26 @@
 fastapi
-uvicorn[standard]
+uvicorn
+starlette
 pydantic
-python-multipart
-motor
-httpx
-python-jose[cryptography]
-passlib[bcrypt]
+pydantic-settings
 python-dotenv
-gTTS
-aiofiles
+
+# Database and Auth
+motor
+pymongo
+bcrypt
+passlib
+python-jose
+python-multipart
+email-validator
+
+# Translation and API Calls
+deep-translator
+indic-transliteration
+langdetect==1.0.9
+httpx
+requests
+
+# Dev / Utilities
 pytest
+watchfiles
